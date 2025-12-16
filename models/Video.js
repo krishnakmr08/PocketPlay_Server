@@ -8,7 +8,7 @@ const commentSchema = new Schema({
   timestamp: { type: Date, default: Date.now },
 });
 
-const animeSchema = new Schema(
+const videoSchema = new Schema(
   {
     title: { type: String, required: true },
     description: { type: String },
@@ -28,6 +28,6 @@ const animeSchema = new Schema(
   }
 );
 
-const Anime = mongoose.model("Anime", animeSchema);
+const Video = mongoose.model("Video", animeSchema);
 
-module.exports = Anime;
+module.exports = Video;
