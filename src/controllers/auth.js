@@ -1,6 +1,5 @@
 const { OAuth2Client } = require("google-auth-library");
-const BadRequestError = require("../errors/bad-request");
-const UnauthenticatedError = require("../errors/unauthenticated");
+const { UnauthenticatedError, BadRequestError } = require("../errors/index");
 const User = require("../models/User");
 const { StatusCodes } = require("http-status-codes");
 const jwt = require("jsonwebtoken");
@@ -29,7 +28,7 @@ const signInWithGoogle = async (req, res) => {
   const { id_token } = req.body;
 
   if (!id_token) {
-    throw new BadRequestError("ID token required");
+    throw new BadRequestError("ID token is required");
   }
 
   try {
@@ -58,13 +57,13 @@ const signInWithGoogle = async (req, res) => {
       });
     }
 
-    const username = await generateUniqueUsername(payload.name);
+    const username = await generateUniqueUsername(payload?.name);
 
     user = new User({
-      email: payload.email,
+      email: payload?.email,
       username: username,
-      name: payload.name,
-      userImage: payload.picture,
+      name: payload?.name,
+      userImage: payload?.picture,
     });
 
     await user.save();
@@ -77,13 +76,14 @@ const signInWithGoogle = async (req, res) => {
       tokens: { access_token: accessToken, refresh_token: refreshToken },
     });
   } catch (error) {
-    console.log(error);
+    console.error("Google sign-in failed", error.message);
     throw error;
   }
 };
 
 const refreshToken = async (req, res) => {
   const { refresh_token } = req.body;
+
   if (!refresh_token) {
     throw new BadRequestError("Refresh token is required");
   }
@@ -104,7 +104,7 @@ const refreshToken = async (req, res) => {
       refresh_token: newRefreshToken,
     });
   } catch (error) {
-    console.error(error);
+    console.log("Error refreshing token", error);
     throw new UnauthenticatedError("Invalid refresh token");
   }
 };
