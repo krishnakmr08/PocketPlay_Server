@@ -14,11 +14,11 @@ const io = new Server(server, { cors: { origin: "*" } });
 const startServer = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
-    server.listen(process.env.PORT || 3000, () => {
+    server.listen(process.env.PORT || 3000, () =>
       console.log(
         `HTTP server is running on http://localhost:${process.env.PORT || 3000}`
-      );
-    });
+      )
+    );
   } catch (error) {
     console.log(error);
   }
