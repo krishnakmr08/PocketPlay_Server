@@ -10,7 +10,7 @@ const contentData = [
     starred_by: [],
     comments: [],
     thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1767433877/__8_bxsgf3.jpg",
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843347/my_morning_routine_in_photos_-_wake_up_-_morning_thoughts_-_hydrate_-_cosy_up_%EF%B8%8F_-_caffeinate_-_breakfast___%EF%B8%8F_-_mindful_eating_-_affirmations_morningroutine_morning_breakfast_breakf_n0hdga.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -39,8 +39,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843088/__tgrux5.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843088/__tgrux5.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -54,8 +53,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843115/apple_imac_workspase_xoqmov.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843115/apple_imac_workspase_xoqmov.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -69,8 +67,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843180/Page_from_my_SD_trip_wvkni6.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843180/Page_from_my_SD_trip_wvkni6.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -84,8 +81,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766907709/__6_jp4pjz.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766907709/__6_jp4pjz.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: true,
   },
@@ -99,8 +95,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843066/__1_hupdrf.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843066/__1_hupdrf.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -114,8 +109,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843264/__5_ea82er.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843264/__5_ea82er.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -147,8 +141,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843186/Sunday_vibes___fresh_flowers_jdemvo.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843186/Sunday_vibes___fresh_flowers_jdemvo.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -162,8 +155,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843102/__2_km375s.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843102/__2_km375s.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -177,8 +169,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843124/cute_train_journey_sunset_jkok80.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843124/cute_train_journey_sunset_jkok80.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -192,8 +183,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843096/__3_ccb3re.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843096/__3_ccb3re.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -207,8 +197,7 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url:
-      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843093/__4_ziymgj.jpg",
+    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843093/__4_ziymgj.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
