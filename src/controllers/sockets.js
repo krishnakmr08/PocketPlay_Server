@@ -19,6 +19,8 @@ const socketService = (io) => {
         return next(new Error("Authentication invalid: User not found"));
       }
 
+      console.log(user)
+
       socket.user = { id: payload.id, full_name: payload.full_name };
 
       next();
@@ -32,7 +34,7 @@ const socketService = (io) => {
 
   io.on("connection", (socket) => {
     socket.on("join-stream", async ({ playId }) => {
-      console.log(playId, "User Joined");
+      console.log(playId, "user Joined");
       socket.join(playId);
     });
 
