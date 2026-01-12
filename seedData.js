@@ -1,5 +1,20 @@
 const contentData = [
   {
+    title: "Mountain Escape",
+    description: "Peaceful views from the hills",
+    genre: "Travel",
+    likes: 610,
+    rating: 9.3,
+    starred: 210,
+    liked_by: [],
+    starred_by: [],
+    comments: [],
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1767695484/IMG_2677_ksugrv.jpg",
+    stream_url: "http://localhost:8000/output.m3u8",
+    is_live: true,
+  },
+  {
     title: "Quiet Morning Life",
     description: "A calm start to the day with positive thoughts",
     genre: "Life",
@@ -39,7 +54,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843088/__tgrux5.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843088/__tgrux5.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -53,7 +69,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843115/apple_imac_workspase_xoqmov.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843115/apple_imac_workspase_xoqmov.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -67,24 +84,12 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843180/Page_from_my_SD_trip_wvkni6.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843180/Page_from_my_SD_trip_wvkni6.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
-  {
-    title: "Mountain Escape",
-    description: "Peaceful views from the hills",
-    genre: "Travel",
-    likes: 610,
-    rating: 9.3,
-    starred: 210,
-    liked_by: [],
-    starred_by: [],
-    comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766907709/__6_jp4pjz.jpg",
-    stream_url: "http://localhost:8000/output.m3u8",
-    is_live: true,
-  },
+
   {
     title: "Beach Walk Therapy",
     description: "Healing walks by the sea",
@@ -95,7 +100,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843066/__1_hupdrf.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843066/__1_hupdrf.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -109,7 +115,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843264/__5_ea82er.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843264/__5_ea82er.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -141,7 +148,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843186/Sunday_vibes___fresh_flowers_jdemvo.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843186/Sunday_vibes___fresh_flowers_jdemvo.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -155,7 +163,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843102/__2_km375s.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843102/__2_km375s.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -169,7 +178,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843124/cute_train_journey_sunset_jkok80.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843124/cute_train_journey_sunset_jkok80.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -183,7 +193,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843096/__3_ccb3re.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843096/__3_ccb3re.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },
@@ -197,7 +208,8 @@ const contentData = [
     liked_by: [],
     starred_by: [],
     comments: [],
-    thumbnail_url: "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843093/__4_ziymgj.jpg",
+    thumbnail_url:
+      "https://res.cloudinary.com/dbk7u2li2/image/upload/v1766843093/__4_ziymgj.jpg",
     stream_url: "http://localhost:8000/output.m3u8",
     is_live: false,
   },

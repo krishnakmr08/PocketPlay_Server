@@ -38,3 +38,5 @@ const getPlays = async (req, res) => {
     res.status(500).json({ message: "Failed to fetch plays" });
   }
 };
+
+module.exports = { getPlays };

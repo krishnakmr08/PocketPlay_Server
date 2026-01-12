@@ -10,17 +10,16 @@ async function seedDB() {
 
     await Play.deleteMany({});
 
-    console.log("Cleared Play collection 🗑️");
+    console.log("Cleared Play collection ");
 
     await Play.insertMany(contentData);
 
-    console.log(" Play data seeded successfully! ✅");
+    console.log("Play data seeded successfully! ");
 
     mongoose.connection.close();
-    console.log("Database connection closed. 🚀");
-    
+    console.log("Database connection closed. ");
   } catch (error) {
-    console.error("Error seeding database:❌", error);
+    console.error("Error seeding database:", error);
   }
 }
 

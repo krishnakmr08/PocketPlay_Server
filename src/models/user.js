@@ -1,25 +1,31 @@
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 
-const userSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
+const userSchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    picture: {
+      type: String,
+    },
+    username: {
+      type: String,
+      required: true,
+      unique: true,
+      match: [/^[a-zA-Z0-9_]{3,30}$/, "Please provide a valid username"],
+    },
   },
-  email: {
-    type: String,
-    required: true,
-  },
-  userImage: {
-    type: String,
-  },
-  username: {
-    type: String,
-    required: true,
-    unique: true,
-    match: [/^[a-zA-Z0-9_]{3,30}$/, "Please provide a valid username"],
-  },
-});
+  {
+    timestamps: true,
+  }
+);
 
 userSchema.methods.createAccessToken = function () {
   return jwt.sign(

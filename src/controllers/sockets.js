@@ -4,10 +4,10 @@ const jwt = require("jsonwebtoken");
 
 const socketService = (io) => {
   io.use(async (socket, next) => {
-    const token = socket.handshake.auth.token;
+      const token = socket.handshake.auth.token;
 
     if (!token) {
-      return next(new Error("Authentication invalid : No token provided"));
+      return next(new Error("Authentication invalid: No token provided"));
     }
 
     try {
@@ -18,8 +18,6 @@ const socketService = (io) => {
       if (!user) {
         return next(new Error("Authentication invalid: User not found"));
       }
-
-      console.log(user)
 
       socket.user = { id: payload.id, full_name: payload.full_name };
 
@@ -88,6 +86,7 @@ const socketService = (io) => {
       }
 
       play.comments.push({ user: socket.user.id, comment });
+
       await play.save();
 
       const updatedPlay = await Play.findById(playId).populate("comments.user");
@@ -110,9 +109,6 @@ const socketService = (io) => {
 
       io.to(playId).emit("stream-reactions", reactionData);
     });
-
-
-
   });
 };
 

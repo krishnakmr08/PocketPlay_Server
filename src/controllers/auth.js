@@ -63,13 +63,14 @@ const signInWithGoogle = async (req, res) => {
       email: payload?.email,
       username: username,
       name: payload?.name,
-      userImage: payload?.picture,
+      picture: payload?.picture,
     });
 
     await user.save();
 
     const accessToken = user.createAccessToken();
     const refreshToken = user.createRefreshToken();
+
 
     res.status(StatusCodes.CREATED).json({
       user,
