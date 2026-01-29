@@ -1,8 +1,9 @@
 const { OAuth2Client } = require("google-auth-library");
-const { UnauthenticatedError, BadRequestError } = require("../errors/index");
-const User = require("../models/User");
 const { StatusCodes } = require("http-status-codes");
+const { BadRequestError, UnauthenticatedError } = require("../errors");
 const jwt = require("jsonwebtoken");
+const User = require("../models/User");
+
 
 const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
@@ -72,7 +73,7 @@ const signInWithGoogle = async (req, res) => {
     const refreshToken = user.createRefreshToken();
 
 
-    res.status(StatusCodes.CREATED).json({
+   return res.status(StatusCodes.CREATED).json({
       user,
       tokens: { access_token: accessToken, refresh_token: refreshToken },
     });

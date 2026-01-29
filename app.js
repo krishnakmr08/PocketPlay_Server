@@ -2,16 +2,16 @@ require("dotenv").config();
 const express = require("express");
 const http = require("http");
 const { Server } = require("socket.io");
-const connectDB = require("./src/config/connectDB");
-const notFoundMiddleware = require("./src/middleware/not-found");
-const errorHandlerMiddleware = require("./src/middleware/error-handler");
+const connectDB = require("./config/connectDB");
+const notFoundMiddleware = require("./middleware/not-found");
+const errorHandlerMiddleware = require("./middleware/error-handler");
 
 //Routers
-const authRouter = require("./src/routes/auth");
-const playRouter = require("./src/routes/play");
+const authRouter = require("./routes/auth");
+const playRouter = require("./routes/play");
 
 // Import socket service
-const socketService = require("./src/controllers/sockets");
+const socketService = require("./controllers/sockets");
 
 const app = express();
 app.use(express.json());

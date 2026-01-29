@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
-const connectDB = require("./src/config/connectDB");
-const Play = require("./src/models/Play");
+const connectDB = require("./config/connectDB");
+const Play = require("./models/Play");
 const { contentData } = require("./seedData");
 
 async function seedDB() {
@@ -10,14 +10,14 @@ async function seedDB() {
 
     await Play.deleteMany({});
 
-    console.log("Cleared Play collection ");
+    console.log("Cleared Play collection");
 
     await Play.insertMany(contentData);
 
     console.log("Play data seeded successfully! ");
 
     mongoose.connection.close();
-    console.log("Database connection closed. ");
+    console.log("Database connection closed ");
   } catch (error) {
     console.error("Error seeding database:", error);
   }
